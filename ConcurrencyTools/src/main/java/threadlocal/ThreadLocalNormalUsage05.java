@@ -37,6 +37,7 @@ public class ThreadLocalNormalUsage05 {
 
 class ThreadSafeFormatter {
 
+    // 重写initialValue是初始化ThreadLocal时就赋值，把new出来的对象放进去
     public static ThreadLocal<SimpleDateFormat> dateFormatThreadLocal = new ThreadLocal<SimpleDateFormat>() {
         @Override
         protected SimpleDateFormat initialValue() {

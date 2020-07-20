@@ -6,8 +6,8 @@ package threadlocal;
 public class ThreadLocalNormalUsage06 {
 
     public static void main(String[] args) {
-        new Service1().process("");
 
+        new Service1().process("");
     }
 }
 
@@ -24,7 +24,6 @@ class Service2 {
 
     public void process() {
         User user = UserContextHolder.holder.get();
-        ThreadSafeFormatter.dateFormatThreadLocal.get();
         System.out.println("Service2拿到用户名：" + user.name);
         new Service3().process();
     }
@@ -42,8 +41,6 @@ class Service3 {
 class UserContextHolder {
 
     public static ThreadLocal<User> holder = new ThreadLocal<>();
-
-
 }
 
 class User {
