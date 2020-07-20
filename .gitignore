@@ -3,3 +3,4 @@ JavaStudy.iml
 .DS_Store
 .out/
 */*.iml
+*/target/
