@@ -12,6 +12,7 @@
         <module>JavaBasic</module>
         <module>Multithreading</module>
         <module>DesignPatterns</module>
+        <module>ConcurrencyTools</module>
     </modules>
 
 
