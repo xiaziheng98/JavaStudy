@@ -2,6 +2,7 @@ package singleton;
 
 /**
  * 描述：     懒汉式（线程安全）（不推荐）
+ * 缺点：效率太低
  */
 public class Singleton4 {
 
