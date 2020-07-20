@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="56c3843f-0ea6-487e-bad8-09f6eaca9f1d" name="Default Changelist" comment="" />
+    <list default="true" id="56c3843f-0ea6-487e-bad8-09f6eaca9f1d" name="Default Changelist" comment="add design patterns">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,15 +21,19 @@
     </option>
   </component>
   <component name="ProjectId" id="1evg5KoaysAEOFce3pyKpNcMNoR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Multithreading/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/DesignPatterns/src/main" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -34,6 +41,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/DesignPatterns/src/main" />
+      <recent name="$PROJECT_DIR$/DesignPatterns/src/main/java" />
+      <recent name="$PROJECT_DIR$/DesignPatterns/src/main/java/designpatterns" />
+      <recent name="$PROJECT_DIR$/Multithreading/src/main/java" />
       <recent name="$PROJECT_DIR$/JavaBasic/src/main/java" />
     </key>
   </component>
@@ -59,21 +70,49 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595207295708</updated>
-      <workItem from="1595207299034" duration="360000" />
+      <workItem from="1595207299034" duration="1772000" />
     </task>
+    <task id="LOCAL-00001" summary="add design patterns">
+      <created>1595209086134</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1595209086134</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add design patterns">
+      <created>1595209138684</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1595209138684</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add design patterns" />
+    <option name="LAST_COMMIT_MESSAGE" value="add design patterns" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="278" y="87" key="CommitChangelistDialog2" timestamp="1595210475520">
+      <screen x="50" y="23" width="1390" height="877" />
+    </state>
+    <state x="1755" y="100" key="CommitChangelistDialog2/1440.23.1920.1057/50.23.1390.877@1440.23.1920.1057" timestamp="1595209138567" />
+    <state x="278" y="87" key="CommitChangelistDialog2/1440.23.1920.1057/50.23.1390.877@50.23.1390.877" timestamp="1595210475520" />
     <state x="1531" y="84" key="SettingsEditor" timestamp="1595207659570">
       <screen x="1440" y="23" width="1920" height="1057" />
     </state>
     <state x="1531" y="84" key="SettingsEditor/1440.23.1920.1057/50.23.1390.877@1440.23.1920.1057" timestamp="1595207659570" />
-    <state x="1524" y="185" key="new project wizard" timestamp="1595207729394">
+    <state x="1997" y="291" key="Vcs.Push.Dialog.v2" timestamp="1595209140294">
       <screen x="1440" y="23" width="1920" height="1057" />
     </state>
-    <state x="1524" y="185" key="new project wizard/1440.23.1920.1057/50.23.1390.877@1440.23.1920.1057" timestamp="1595207729394" />
+    <state x="1997" y="291" key="Vcs.Push.Dialog.v2/1440.23.1920.1057/50.23.1390.877@1440.23.1920.1057" timestamp="1595209140294" />
+    <state x="1524" y="185" key="new project wizard" timestamp="1595208463530">
+      <screen x="1440" y="23" width="1920" height="1057" />
+    </state>
+    <state x="1524" y="185" key="new project wizard/1440.23.1920.1057/50.23.1390.877@1440.23.1920.1057" timestamp="1595208463530" />
   </component>
 </project>
