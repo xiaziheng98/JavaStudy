@@ -10,7 +10,7 @@ public class FinalMethodDemo {
     }
 
     public final void eat() {
-
+        System.out.println("test");
     }
 
     public static void sleep() {
@@ -31,5 +31,10 @@ class SubClass extends FinalMethodDemo {
 //    }
     public static void sleep() {
 
+    }
+
+    public static void main(String[] args) {
+        SubClass subClass = new SubClass();
+        subClass.eat();
     }
 }

@@ -11,7 +11,6 @@ import java.util.concurrent.locks.ReentrantLock;
  */
 public class TryLockDeadlock implements Runnable {
 
-
     int flag = 1;
     static Lock lock1 = new ReentrantLock();
     static Lock lock2 = new ReentrantLock();
@@ -23,7 +22,6 @@ public class TryLockDeadlock implements Runnable {
         r2.flag = 0;
         new Thread(r1).start();
         new Thread(r2).start();
-
     }
 
     @Override
@@ -37,8 +35,7 @@ public class TryLockDeadlock implements Runnable {
                             Thread.sleep(new Random().nextInt(1000));
                             if (lock2.tryLock(800, TimeUnit.MILLISECONDS)) {
                                 try {
-                                    System.out.println("线程1获取到了锁2");
-                                    System.out.println("线程1成功获取到了两把锁");
+                                    System.out.println("线程1获取到了锁2，线程1成功获取到了两把锁");
                                     break;
                                 } finally {
                                     lock2.unlock();
@@ -66,8 +63,7 @@ public class TryLockDeadlock implements Runnable {
                             Thread.sleep(new Random().nextInt(1000));
                             if (lock1.tryLock(800, TimeUnit.MILLISECONDS)) {
                                 try {
-                                    System.out.println("线程2获取到了锁1");
-                                    System.out.println("线程2成功获取到了两把锁");
+                                    System.out.println("线程2获取到了锁1，线程2成功获取到了两把锁");
                                     break;
                                 } finally {
                                     lock1.unlock();
