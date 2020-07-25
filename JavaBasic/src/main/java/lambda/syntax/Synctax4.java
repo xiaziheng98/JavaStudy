@@ -1,6 +1,6 @@
 package lambda.syntax;
 
-import com.lambda.data.Person;
+import lambda.data.Person;
 
 public class Synctax4 {
 

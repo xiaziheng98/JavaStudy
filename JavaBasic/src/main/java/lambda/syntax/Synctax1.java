@@ -1,6 +1,6 @@
 package lambda.syntax;
 
-import com.lambda.interfaces.*;
+import lambda.interfaces.*;
 
 public class Synctax1 {
 

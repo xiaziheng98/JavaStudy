@@ -2,6 +2,7 @@ package designpatterns.structural.adapter.objectadapter;
 
 /**
  * Created by geely
+ * 对象适配器：通过组合模式实现
  */
 public class Test {
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
 package lambda.syntax;
 
-import com.lambda.interfaces.SingleReturnSingleParam;
+import lambda.interfaces.SingleReturnSingleParam;
 
 public class Synctax3 {
 

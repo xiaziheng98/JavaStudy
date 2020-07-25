@@ -1,8 +1,8 @@
 package designpatterns.structural.proxy.dynamicproxy;
 
-import com.geely.design.pattern.structural.proxy.IOrderService;
-import com.geely.design.pattern.structural.proxy.Order;
-import com.geely.design.pattern.structural.proxy.OrderServiceImpl;
+import designpatterns.structural.proxy.IOrderService;
+import designpatterns.structural.proxy.Order;
+import designpatterns.structural.proxy.OrderServiceImpl;
 
 /**
  * Created by geely

@@ -1,9 +1,9 @@
 package lambda.syntax;
 
-import com.lambda.interfaces.NoneReturnMutipleParam;
-import com.lambda.interfaces.NoneReturnSingleParam;
-import com.lambda.interfaces.SingleReturnMutipleParam;
-import com.lambda.interfaces.SingleReturnNoneParam;
+import lambda.interfaces.NoneReturnMutipleParam;
+import lambda.interfaces.NoneReturnSingleParam;
+import lambda.interfaces.SingleReturnMutipleParam;
+import lambda.interfaces.SingleReturnNoneParam;
 
 public class Synctax2 {
     public static void main(String[] args) {

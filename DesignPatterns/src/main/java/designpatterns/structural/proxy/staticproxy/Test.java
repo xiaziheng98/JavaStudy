@@ -1,6 +1,6 @@
 package designpatterns.structural.proxy.staticproxy;
 
-import com.geely.design.pattern.structural.proxy.Order;
+import designpatterns.structural.proxy.Order;
 
 /**
  * Created by geely

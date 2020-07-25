@@ -1,6 +1,6 @@
 package lambda.exercise;
 
-import com.lambda.data.Person;
+import lambda.data.Person;
 
 import java.util.ArrayList;
 

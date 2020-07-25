@@ -1,9 +1,9 @@
 package designpatterns.structural.proxy.staticproxy;
 
-import com.geely.design.pattern.structural.proxy.IOrderService;
-import com.geely.design.pattern.structural.proxy.Order;
-import com.geely.design.pattern.structural.proxy.OrderServiceImpl;
-import com.geely.design.pattern.structural.proxy.db.DataSourceContextHolder;
+import designpatterns.structural.proxy.IOrderService;
+import designpatterns.structural.proxy.Order;
+import designpatterns.structural.proxy.OrderServiceImpl;
+import designpatterns.structural.proxy.db.DataSourceContextHolder;
 
 /**
  * Created by geely

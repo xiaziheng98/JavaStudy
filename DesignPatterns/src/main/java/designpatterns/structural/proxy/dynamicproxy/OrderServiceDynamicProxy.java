@@ -1,7 +1,7 @@
 package designpatterns.structural.proxy.dynamicproxy;
 
-import com.geely.design.pattern.structural.proxy.Order;
-import com.geely.design.pattern.structural.proxy.db.DataSourceContextHolder;
+import designpatterns.structural.proxy.Order;
+import designpatterns.structural.proxy.db.DataSourceContextHolder;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
