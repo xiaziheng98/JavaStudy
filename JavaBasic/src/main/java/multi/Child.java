@@ -1,11 +1,12 @@
 package multi;
 
 public class Child extends Father{
-    public void fun1(int i) {
-        System.out.println("BBB");
+
+    public void fun3() {
+        System.out.println("Child fun3");
     }
 
-    public void fun2() {
-        System.out.println("CCC");
+    public void fun4() {
+        System.out.println("Child fun4");
     }
 }
