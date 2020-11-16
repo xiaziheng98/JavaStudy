@@ -14,19 +14,22 @@ public class ObjectPoolFactory {
     /**
      *  定义一个创建对象的方法，该方法是通过Class对象的newInstance()方法来创建该Class对象对应类的实例
      *  该方法只要传入一个字符串类名，程序可以根据该类名生成Java对象
+     *  参数 clazzName 是一个类的全限定类名
      */
-    private Object createObjectByDefaultConstructor(String clazzName) throws InstantiationException, IllegalAccessException, ClassNotFoundException {
+    private Object createObjectByDefaultConstructor(String clazzName)
+            throws InstantiationException, IllegalAccessException, ClassNotFoundException {
 
         //根据字符串来获取对应的Class对象
         Class<?> clazz = Class.forName(clazzName);
 
-        //使用clazz对应类的默认构造器创建实例
+        //使用clazz对应类的默认构造器创建实例，默认构造器是无参构造
         return clazz.newInstance();
     }
 
     /**
      *  定义一个创建对象的方法，该方法是通过Constructor对象的getConstructor()方法来创建该Class对象对应类的实例
      *  该方法只要传入一个字符串类名，程序可以根据重载的构造器生成Java对象
+     *  参数 clazzName 是一个类的全限定类名
      */
     private Object createObjectBySpecialConstructor(String clazzName)
             throws InstantiationException, IllegalAccessException, ClassNotFoundException, NoSuchMethodException, InvocationTargetException {
@@ -65,7 +68,12 @@ public class ObjectPoolFactory {
     public static void main(String[] args) throws Exception {
         ObjectPoolFactory pf = new ObjectPoolFactory();
 
-        Object book = pf.createObjectAndExecuteMethod("com.reflex.Book");
+        Object book = pf.createObjectByDefaultConstructor("reflex.Book");
+        Object book2 = pf.createObjectBySpecialConstructor("reflex.Book");
+        Object book3 = pf.createObjectAndExecuteMethod("reflex.Book");
+
         System.out.println(book);
+        System.out.println(book2);
+        System.out.println(book3);
     }
 }

@@ -30,8 +30,8 @@ public class OutOfOrderExecution {
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
-                    a = 1;
-                    x = b;
+                    a = 1; // 1
+                    x = b; // 2
                 }
             });
             Thread two = new Thread(new Runnable() {
@@ -43,22 +43,26 @@ public class OutOfOrderExecution {
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
-                    b = 1;
-                    y = a;
+                    b = 1; // 3
+                    y = a; // 4
                 }
             });
-            two.start();
+            // 这4行代码的执行顺序也就是两个线程的执行顺序决定了最终x和y的结果，一共有3种情况：
+            // 1. a=1;x=b(0);b=1;y=a(1)，最终结果是x=0, y=1；线程one的1、2行执行完，线程two再执行3、4行
+            // 2. b=1;y=a(0);a=1;x=b(1)，最终结果是x=1, y=0；线程two的3、4行执行完，线程one再执行1、2行
+            // 3. a=1;b=1;x=b(1);y=a(1)，最终结果是x=1, y=1；线程one执行完第1行，线程two执行完第3行，线程one再执行第2行，线程two再执行第4行
+            // 4. y=a(0);a=1;x=b(0);b=1，最终结果是x=0, y=0；线程two发生了指令重排
+            // ------------    12-6    -------------
             one.start();
+            two.start();
             latch.countDown();
             one.join();
             two.join();
 
             String result = "第" + i + "次（" + x + "," + y + ")";
-            if (x == 0 && y == 0) {
-                System.out.println(result);
+            System.out.println(result);
+            if (x == 1 && y == 1) {
                 break;
-            } else {
-                System.out.println(result);
             }
         }
     }
