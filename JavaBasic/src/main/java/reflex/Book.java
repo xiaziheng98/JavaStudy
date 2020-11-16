@@ -7,14 +7,6 @@ public class Book{
     private String name;
     private String author;
 
-    @Override
-    public String toString() {
-        return "Book{" +
-                "name='" + name + '\'' +
-                ", author='" + author + '\'' +
-                '}';
-    }
-
     public Book() {
     }
 
@@ -57,5 +49,13 @@ public class Book{
         }
 
         return string;
+    }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "name='" + name + '\'' +
+                ", author='" + author + '\'' +
+                '}';
     }
 }
