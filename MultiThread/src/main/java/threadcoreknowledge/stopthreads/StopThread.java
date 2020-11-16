@@ -30,6 +30,7 @@ public class StopThread implements Runnable {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        thread.stop();
+//        thread.stop();
+        thread.interrupt();
     }
 }
